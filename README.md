@@ -1,3 +1,6 @@
+# 👋 About Freire
+Freire is a decentralized empowerment tool for community contributors based on the concept of liquid participatory democracy, and an open contributor reputation system.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
