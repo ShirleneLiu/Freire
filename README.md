@@ -1,39 +1,25 @@
 # 👋 About Freire
-Freire is a decentralized empowerment tool for community contributors based on the concept of liquid participatory democracy, and an open contributor reputation system.
+Freire is a decentralized empowerment tool for community contributors based on the concept of liquid participatory democracy, and also an open contributor reputation system. 
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The name is inspired by the Brazilian educator Paulo Freire, as a tribute to the inspiration from his thoughts. ❤️
 
-## Getting Started
+1. **a reputation resume**, integrating collaborative platforms within the community, such as GitHub, Notion, WeChat, Twitter、TG etc., allows for contributions to be automatically recorded.
+2. **a governance tool**, using contributor reputation to determine community governance makes the process more democratic, transparent, fair, and efficient, every contributor receives their rightful reputation empowers each community member without relying on a centralized authority.
+3. **a data buissness**, eputation data serves not only as a foundation for community governance but also provides insights for other platforms, facilitating talent discovery and contributing meaningfully to society. This data can enable fair reward distribution and expand various financial applications, such as credit scoring and lending assessments.
 
-First, run the development server:
+# 👀 Why Freire?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+As DAOs & communities continue to grow, several real issues arise: Who is qualified to publish the official Twitter? Who has the authority to participate in decision-making regarding the use of public funds? And who grants these permissions? 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is where Freire comes in.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Integrating Cross-Platform Data**: Many community contributions are difficult to effectively record, often being fragmented and scattered. Freire integrates contribution data from Web2 and Web3, assessing contributions based on participant behavior, providing a comprehensive reputation evaluation that breaks down existing limitations in community collaboration, all without the need for additional recording.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Reducing Redundant Work and Overcoming the Quantification Paradox**: Once community contributions are quantified, it is easy to slip into the quantification governance paradox, leading to community rigidity. Additionally, external incentives can turn community governance and resource allocation into extra operational burdens. Freire aims to solve this problem through a decentralized and automated approach, utilizing non-linear analysis models to build a reputation system.
 
-## Learn More
+- **The Need for Non-Technical Communities**: Github provides developers with a good contribution tracking system through commit records, while Heyanon verifies contributor identities via Github repositories and uses zk technology to authorize contributors. These insights have greatly inspired me, but non-technical communities lack effective tools, which is why Freire was born.
 
-To learn more about Next.js, take a look at the following resources:
+# 🦾 Core Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 
+- 
