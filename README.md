@@ -22,7 +22,5 @@ Once community contributions are quantified, it is easy to slip into the quantif
 - **The Need for Non-Technical Communities**
 Github provides developers with a good contribution tracking system through commit records, while [Heyanon](https://www.heyanon.xyz/) verifies contributor identities via Github repositories and uses zk technology to authorize contributors. These insights have greatly inspired me, but non-technical communities lack effective tools, which is why Freire was born.
 
-# 🦾 Core Components
-
-
-
+# 🦾 Freire Architecture
+![Freire Architecture](./doc/images/freire-architecture-diagram.png)
