@@ -1,10 +1,8 @@
 "use client";
 
 // page.tsx
-// import Tabs from '@/app/ui/communities/table';
-// import { communities } from '@/app/lib/data';
 import { Group } from "@/app/components/Group";
-
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -28,9 +26,11 @@ export default function Home() {
               Every contributor receives their reputation which empowers them without relying on a centralized authority.
             </p>
             <div className="flex w-[103px] items-center justify-center gap-2.5 px-7 py-3 absolute top-[469px] left-[676px] rounded-[5px] [background:linear-gradient(180deg,rgb(255,151.94,151.94)_0%,rgb(128.41,83.94,255)_100%)]">
-              <div className="relative w-[60px] mt-[-1.00px] ml-[-6.50px] mr-[-6.50px] [font-family:'Poppins',Helvetica] font-normal text-white text-sm text-center tracking-[0] leading-5">
-                Explore
-              </div>
+              <Link href="/communities">
+                <div className="relative w-[60px] mt-[-1.00px] ml-[-6.50px] mr-[-6.50px] [font-family:'Poppins',Helvetica] font-normal text-white text-sm text-center tracking-[0] leading-5 cursor-pointer">
+                  Explore
+                </div>
+              </Link>
             </div>
             <div className="absolute w-[866px] h-[553px] top-[581px] left-[287px] bg-[#131415] rounded-[28px]" />
             <div className="absolute w-[246px] h-[460px] top-[624px] left-[340px] bg-[#222228] rounded-[20px]" />
@@ -205,9 +205,11 @@ export default function Home() {
               Contributors
             </div>
             <div className="flex w-[149px] items-center justify-center gap-2.5 px-7 py-3 absolute top-[1012px] left-[914px] rounded-[5px] [background:linear-gradient(180deg,rgb(255,151.94,151.94)_0%,rgb(128.41,83.94,255)_100%)]">
-              <div className="relative w-32 mt-[-1.00px] ml-[-17.50px] mr-[-17.50px] [font-family:'Poppins',Helvetica] font-normal text-white text-sm text-center tracking-[0] leading-5">
-                Claim Reputation
-              </div>
+              <Link href="/communities">
+                <div className="relative w-32 mt-[-1.00px] ml-[-17.50px] mr-[-17.50px] [font-family:'Poppins',Helvetica] font-normal text-white text-sm text-center tracking-[0] leading-5">
+                  Claim Reputation
+                </div>
+              </Link>
             </div>
           </div>
           <div className="absolute w-[678px] h-[678px] top-[2141px] left-[130px]">
@@ -322,12 +324,14 @@ export default function Home() {
             Integrate cross-platform data in one.
           </p>
           <p className="absolute w-[385px] top-[2517px] left-[832px] [font-family:'Poppins',Helvetica] font-normal text-[#9e9e9e] text-lg tracking-[0] leading-7">
-          Every contributor receives their reputation which empowers them without relying on a centralized authority.
+            Every contributor receives their reputation which empowers them without relying on a centralized authority.
           </p>
           <div className="inline-flex items-start gap-2.5 px-7 py-3 absolute top-[2630px] left-[830px] rounded-[5px] [background:linear-gradient(180deg,rgb(255,151.94,151.94)_0%,rgb(128.41,83.94,255)_100%)]">
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Poppins',Helvetica] font-normal text-white text-sm tracking-[0] leading-5 whitespace-nowrap">
-              Check My Reputation Resume
-            </div>
+            <Link href="/communities">
+              <div className="relative w-fit mt-[-1.00px] [font-family:'Poppins',Helvetica] font-normal text-white text-sm tracking-[0] leading-5 whitespace-nowrap">
+                Check My Reputation Resume
+              </div>
+            </Link>
           </div>
           <Group className="!absolute !left-0 !top-[4582px]" />
           <div className="absolute w-[582px] h-[628px] top-[3933px] left-[108px]">
