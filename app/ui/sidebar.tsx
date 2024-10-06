@@ -4,7 +4,7 @@ const Sidebar: React.FC = () => {
   return (
     <aside className="w-20 bg-gray-800 text-white fixed top-0 left-0 h-full p-2 flex flex-col items-center overflow-y-auto">
       <div className="mb-4">
-        <img src="/icon.svg" alt="Site Icon" className="w-10 h-10" />
+        <img src="/Freire-White.svg" alt="Site Icon" className="w-10 h-10" />
       </div>
       {/* <nav>
         <ul className="space-y-4">

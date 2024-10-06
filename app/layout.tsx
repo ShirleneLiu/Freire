@@ -4,7 +4,7 @@ import "./globals.css";
 
 import React from "react";
 import AppWalletProvider from "@/app/ui/contexts/AppWalletProvider";
-import Sidebar from '@/app/ui/sidebar';
+// import Sidebar from '@/app/ui/sidebar';
 import Header from '@/app/ui/header';
 
 
@@ -33,8 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}>
         <AppWalletProvider>
-          <Sidebar />
-          <div className="ml-20 flex-1 flex flex-col w-full">
+          {/* <Sidebar /> */}
+          <div className="flex-1 flex flex-col w-full">
             <Header />
             {children}
           </div>

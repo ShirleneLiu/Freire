@@ -8,10 +8,20 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-20 right-0 flex justify-between items-center p-4 bg-gray-100 shadow-md z-10">
-      <div className="text-xl font-bold">non-tech-commit-tracker</div>
-      <WalletMultiButton style={{}} />
-    </header>
+    <div className="flex justify-between items-center p-4 bg-black px-8">
+      {/* <div className="">
+        <img src="/Freire-White.svg" alt="Site Icon" className="w-10 h-10" />
+      </div> */}
+      <div className="flex items-center">
+        <img src="/Freire-White.svg" alt="Freire white" className="w-6 h-10" />
+        <div className="ml-2 [font-family:'Poppins',Helvetica] font-semibold text-white text-3xl leading-none">
+          Freire
+        </div>
+      </div>
+      <div className="flex gap-4">
+        <WalletMultiButton className="ml-4" />
+      </div>
+    </div>
   );
 };
 
