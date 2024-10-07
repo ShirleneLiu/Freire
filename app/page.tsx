@@ -8,12 +8,9 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="flex-1 p-4 w-full bg-black text-white min-h-screen">
-      {/* <div>
-        <Tabs communities={communities} />
-      </div> */}
       <div className="bg-black flex flex-row justify-center w-full">
         <div className="bg-black w-[1440px] h-[4942px] relative">
-          <div className="absolute w-[1440px] h-[1281px] top-[-30px] left-0">
+          <div className="w-[1440px] h-[1281px] top-[-30px] left-0">
             <img className="absolute w-[1227px] h-[847px] top-[30px] left-[107px]" alt="Group" src="/img/group-95.png" />
             <img className="absolute w-[1440px] h-[474px] top-[807px] left-0" alt="Subtract" src="/img/subtract.svg" />
             <div className="absolute w-[538px] h-[538px] top-0 left-[451px] rounded-[269px] [background:radial-gradient(50%_50%_at_50%_50%,rgb(34.15,34.15,40.37)_0%,rgba(34.15,34.15,40.37,0)_100%)]" />

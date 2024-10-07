@@ -29,11 +29,11 @@ const CommunityGrid: React.FC<CommunityGridProps> = ({ communities }) => {
             <p className="mt-4 text-center text-xl font-semibold">
               {community.name}
             </p>
-            <p className="mt-2 text-center text-gray-600">
+            <p className="mt-2 text-center text-gray-200">
             Members: {formatNumber(community.members_count)}
             </p>
             <div className="mt-4 text-center">
-              <Link href={`/communities/${community.slug}`} className="inline-block px-4 py-2 border border-gray-700 text-gray-700 rounded-full hover:bg-gray-100">
+              <Link href={`/communities/${community.slug}`} className="inline-block px-4 py-2 border border-gray-700 text-white rounded-full hover:bg-gray-100">
                 Verify
               </Link>
             </div>

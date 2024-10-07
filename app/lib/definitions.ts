@@ -14,6 +14,7 @@ export type Community = {
   name: string;
   image_url: string;
   members_count: number;
+  description: string;
   slug: string;
 };
 
@@ -23,15 +24,11 @@ export type Repository = {
   communityId: string;
   name: string;
   description: string;
-  stars: number;
-  forks: number;
-  owner: User;
 };
 
 export type Contributor = {
   id: string;
   userId: string;
   repositoryId: string;
-  contributions: number;
   avatarUrl: string;
 };
