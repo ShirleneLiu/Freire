@@ -4,9 +4,32 @@
 import { repositories, contributors, fetchCommunityBySlug } from '@/app/lib/data'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+import axios from 'axios';
+
 
 export default function Page({ params }: { params: { slug: string } }) {
   console.log('params:', params);
+  const [user, setUser] = useState<{ username: string; avatarUrl: string } | null>(null);
+
+  useEffect(() => {
+    async function fetchUser() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('code');
+
+      if (code) {
+        try {
+          const response = await axios.get(`/api/auth?code=${code}`);
+          setUser(response.data);
+        } catch (error) {
+          console.error('Failed to fetch user info:', error);
+        }
+      }
+    }
+
+    fetchUser();
+  }, []);
 
   const community = fetchCommunityBySlug(params.slug);
   if (!community) {
@@ -20,6 +43,8 @@ export default function Page({ params }: { params: { slug: string } }) {
   // const redirect_uri = process.env.GITHUB_OAUTH_REDIRECT_URI;
   const redirect_uri = typeof window !== 'undefined' ? window.location.href : '';
   console.log('redirect_uri:', redirect_uri);
+
+  
 
   return (
     <main className="flex-1 p-4 w-full bg-black text-white min-h-screen">
@@ -44,13 +69,31 @@ export default function Page({ params }: { params: { slug: string } }) {
                 </div>
               ))}
               <div className="mt-4">
-                <Link
-                  href={`https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(redirect_uri)}&scope=user`}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 inline-block">
-                  Verify
-                </Link>
+                {user ? (
+                  <button
+                    className="px-4 py-2 bg-gray-500 text-white rounded-lg cursor-not-allowed"
+                    disabled>
+                    Verified
+                  </button>
+                ) : (
+                  <Link
+                    href={`https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=${encodeURIComponent(redirect_uri)}&scope=user`}
+                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 inline-block">
+                    Verify
+                  </Link>
+                )}
               </div>
             </div>
+            {/* 展示用户信息 */}
+            {user && (
+              <section className="mt-8">
+                <h2 className="text-2xl font-bold mb-4">Logged in User</h2>
+                <div className="flex items-center bg-gray-800 p-4 rounded-lg">
+                  <Image src={user.avatarUrl} alt={user.username} width={50} height={50} className="rounded-full mr-4" />
+                  <p>{user.username}</p>
+                </div>
+              </section>
+            )}
 
           </section>
         </div>
